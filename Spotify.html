@@ -262,15 +262,51 @@
                     </div>
                 </div>
                 <div class="rights">
-                    <center><hr></center>
+                    <center>
+                        <hr>
+                    </center>
                     <p>@ 2024 Spoitify AB</p>
                 </div>
             </footer>
         </div>
     </main>
-    <div class="playbutton hidden">
-        <img style="height: 30px; margin-top: 5px;" src="./Assets//triangle.png" alt="">
-    </div>
+
 </body>
+<script>
+
+    const rounds = document.querySelectorAll('.round');
+    
+    rounds.forEach(r => {
+        r.addEventListener("mouseover", (event) => {
+            const hoveredElement = event.target;
+            const image = hoveredElement.closest('div').querySelector('img');       
+            const np = document.createElement("div")
+            np.classList.add("playbutton");
+            np.innerHTML = `<img style="height: 30px; width:10px; margin-top: 5px;" src="./Assets/triangle.png" alt="">`;
+            image.parentNode.insertBefore(np,image.nextSibling);
+            
+        })
+        r.addEventListener("mouseout", (event) => {
+            const removePb = document.querySelectorAll(".playbutton");
+            removePb.forEach(f=>f.remove())
+        }) 
+    })
+    
+    const eveBlock = document.querySelectorAll(".evenBlock");
+    eveBlock.forEach(r=>{
+        r.addEventListener("mouseover",(event)=>{
+            const hoveredElement = event.target;
+            const image = hoveredElement.closest('div').querySelector('img');       
+            const np = document.createElement("div")
+            np.classList.add("playbutton");
+            np.innerHTML = `<img style="height: 30px; width:10px; margin-top: 5px;" src="./Assets/triangle.png" alt="">`;
+            image.parentNode.insertBefore(np,image.nextSibling);
+        })
+        r.addEventListener("mouseout", (event) => {
+            const removePb = document.querySelectorAll(".playbutton");
+            removePb.forEach(f=>f.remove());
+        }) 
+    })
+</script>
 
 </html>
