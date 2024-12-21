@@ -273,7 +273,7 @@
 
 </body>
 <script>
-
+async function start(){
     const rounds = document.querySelectorAll('.round');
     
     rounds.forEach(r => {
@@ -307,6 +307,10 @@
             removePb.forEach(f=>f.remove());
         }) 
     })
+}
+
+start();
+
 </script>
 
 </html>

@@ -123,6 +123,7 @@
 
 main {
     display: flex;
+    position: relative;
 }
 .side{
     flex: 0.27;
@@ -298,9 +299,9 @@ main {
     font-size: 20px;
 }
 .footBanner{
-    position: absolute;
+    position: fixed;
+    bottom: 2px;
     z-index: 2;
-    top: 87%;
     width: 99vw;
     display: flex;
     align-items: center;
