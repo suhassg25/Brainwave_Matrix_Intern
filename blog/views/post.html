@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Blog</title>
+    <link rel="stylesheet" href="../public/posts.css">
+</head>
+<body>
+    <form id="createPostForm">
+        <label for="post">Add your Post image</label>
+        <input type="file" name="post" id="post" accept="image/png, image/jpeg" />
+        <label for="title">Add your Title</label>
+        <input type="text" name="title" id="title" required>
+        <label for="conetnt">Add your Content</label>
+        <textarea name="content" id="content" ></textarea>
+        <br>
+        <input type="submit" value="createPost">
+    </form>
+</body>
+<script src="../public/posts.js"></script>
+</html>

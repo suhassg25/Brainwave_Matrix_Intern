@@ -1,0 +1,46 @@
+*{
+padding: 0;
+margin: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(190deg, orange 15%, aqua 200%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+body #signup{
+    padding: 50px;
+    border: 2px solid rgb(225, 213, 213);
+    width: 30vw;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 5px 5px 100px 5px white;
+}
+body #signup label{
+    font-size: 18px;
+    font-weight: 800;
+    color: rgb(0, 0, 0);
+    text-shadow: 1px 1px rgb(170, 0, 255);
+}
+body #signup input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;    
+}
+body #signup div.submit input{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;    
+}
+body #signup a{
+    margin-top: 20px;
+    font-size: 12px;
+    color: white;
+    font-weight: 1000;
+}

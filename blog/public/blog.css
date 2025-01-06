@@ -1,0 +1,43 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(80deg, purple 1%, aqua 180%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.btn{
+    position: sticky;
+    top: 0px;
+    margin-top: 20px;
+    width: 150px;
+    height: 30px;
+    font-size: 18px;
+    font-weight: 800;
+    font-family: 'Times New Roman', Times, serif;
+}
+body div.posts{
+    background-color: antiquewhite;
+    height: 100%;
+    margin-top: 50px;
+    margin-bottom: 20px;
+    width: 70vw;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+[class^="item"] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 20px;
+}
+[class^="item"] img{
+    width: 200px;
+}

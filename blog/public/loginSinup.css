@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(180deg, rgb(241, 212, 156) 10%, yellow 140%);
+}
+.loginSignup{
+    border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 70vh;
+    width: 40%;
+    align-items: center;
+    border-radius: 20px;
+}
+.loginSignup form {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 200px;
+}
+.loginSignup form .inputBoxes{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 30px;
+    height: 100px;
+    justify-content: space-between;
+}
+.loginSignup form .inputBoxes input{
+    width: 200px;
+    height: 30px;
+    border-radius: 10px;
+}
+.loginSignup form input{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+}
+.loginSignup a{
+    text-decoration: none;
+}
+.loginSignup a button{
+    width: 150px;
+    height: 30px;
+    border-radius: 20px;
+}
+.loginSignup span{
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 100px;
+}
+#error{
+   color: red;
+   font-size: 15px;
+   font-weight: 700;
+   position: absolute;
+   top: 70%;
+}

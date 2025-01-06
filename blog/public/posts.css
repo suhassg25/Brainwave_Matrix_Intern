@@ -1,0 +1,29 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    background: linear-gradient(12deg, #e6a3e9 2%, #aae738 200%);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+form{
+    padding-top: 10px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 10px;
+    width: 50%;
+    height: 80vh;
+    box-shadow: 10px 10px 100px 10px salmon;
+}
+form input{
+    margin-bottom: 50px;
+}
+form textarea{
+    height: 100px;
+    width: 400px;
+}
